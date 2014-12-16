@@ -12,7 +12,7 @@ class TutorialDi extends Di
         parent::__construct($this->getDiArray());
     }
 
-    private function getDiArray()
+    protected function getDiArray()
     {
         return array(
             'projectTitle' => function(Di $di) {
